@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo del IMC</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Calculadora de IMC</h1>
+        <form id="imcForm">
+            <div class="form-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" class="form-control" id="peso" name="peso" required>
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura (cm):</label>
+                <input type="number" class="form-control" id="altura" name="altura" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Calcular IMC</button>
+        </form>
+        <div class="mt-4" id="resultado" style="display: none;">
+            <div class="alert alert-info text-center" id="imcResultado"></div>
+            <div class="alert alert-info text-center" id="estadoResultado"></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
